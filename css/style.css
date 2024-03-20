@@ -482,3 +482,76 @@ section {
     opacity: 0;
   }
 }
+
+
+
+.wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .fill {
+      width: 50px;
+      height: 50px;
+      padding: 2%;
+      color: #fff;
+      outline: 0;
+      border: 2px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      margin: 5px;
+    }
+
+    .fill::after {
+      content: "";
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 5px;
+      left: 5px;
+      transition: 0.2s;
+    }
+
+    .fill:hover::after {
+      top: 0px;
+      left: 0px;
+    }
+
+
+    .icon {
+      font-size: 1em;
+    }
+
+    .blog:hover,
+    .blog::after {
+      background-color: #ffbd2f;
+    }
+
+    .email:hover,
+    .email::after {
+      background-color: #23c8c8;
+    }
+
+    .facebook:hover,
+    .facebook::after {
+      background-color: #4267B2;
+    }
+
+
+    .linkedin:hover,
+    .linkedin::after {
+      background-color: #0e76a8;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .social:hover {
+      color: #fff;
+    }
